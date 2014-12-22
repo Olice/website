@@ -1,0 +1,32 @@
+* {
+    box-sizing: border-box;
+    /* display: inline-block; */
+}
+section {
+    background-color: #cccccc;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    overflow: auto;
+}
+section:nth-of-type(odd) {
+    background-color: white;
+}
+.container {
+    max-width: 760px;
+    margin: 0 auto;
+}
+nav {
+    float: right;
+}
+nav ul li {
+    float: right;
+}
+nav ul li a {
+    color: white;
+}
+header {
+    background-color: #4d4d4d;
+    overflow: auto;
+    color: white;
+}
