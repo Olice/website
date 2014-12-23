@@ -1,32 +1,307 @@
 * {
     box-sizing: border-box;
     /* display: inline-block; */
+    
+    -webkit-font-smoothing: antialiased;
+    font-smoothing: antialiased;
 }
 section {
-    background-color: #cccccc;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    /*height: 100vh;*/
+    /*margin-top: 124px;*/
+    /*padding-bottom: 124px;*/
+    
     margin: 0;
     overflow: auto;
-}
-section:nth-of-type(odd) {
-    background-color: white;
+    background: url(../images/bg.jpg);
+    background-repeat: repeat;
 }
 .container {
-    max-width: 760px;
+    display: block;
+    position: relative;
+    width: 80%;
+    max-width: 560px;
     margin: 0 auto;
 }
+img {
+    width: 100%;
+    max-width: 760px;
+}
+header h1 {
+    /*width: 24%;*/
+    /*display: inline-block;*/
+    /*vertical-align: bottom;*/
+    
+    font-size: 26px;
+    line-height: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    color: #f1f0ee;
+    position: absolute;
+    left: -150px;
+    /*top: 8px;*/
+    
+    line-height: 48px;
+    text-align: right;
+    font-family: AvenirNextRegular;
+}
+header h1 img {
+    max-width: 50px;
+    margin-bottom: 6px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
 nav {
-    float: right;
+    margin: 0;
+    width: 100%;
+    display: inline-block;
+    vertical-align: bottom;
+}
+nav ul {
+    margin-top: 0;
 }
 nav ul li {
-    float: right;
+    width: 25%;
+    float: left;
+    text-align: center;
+}
+nav ul li:nth-of-type(1) {
+    background: #80a721;
+}
+nav ul li:nth-of-type(2) {
+    background: #34912c;
+}
+nav ul li:nth-of-type(3) {
+    background: #29b5e9;
+}
+nav ul li:nth-of-type(4) {
+    background: #f18d1e;
+}
+nav ul li:hover {
+    /*background: white;*/
+    
+    cursor: pointer;
+    /*font-weight: 600;*/
 }
 nav ul li a {
     color: white;
+    width: 100%;
+    display: block;
+    height: 100%;
+    text-decoration: none;
+    font-family: AvenirNextRegular;
+    font-size: 26px;
+    line-height: 48px;
+    /*    margin-top: 24px;
+    margin-bottom: 24px;
+*/
 }
 header {
-    background-color: #4d4d4d;
+    background: #4d4d4d;
     overflow: auto;
     color: white;
 }
+section.intro {
+    height: 100vh;
+    padding-bottom: 0;
+}
+section.intro h1 {
+    font-size: 26px;
+    line-height: 0;
+    margin-top: 24px;
+    margin-bottom: 0;
+    color: #f1f0ee;
+    font-family: AvenirNextRegular;
+}
+section.intro h1 img {
+    max-width: 50px;
+    margin-bottom: 6px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+section.intro h2 {
+    font-size: 26px;
+    line-height: 26px;
+    margin-top: 0;
+    margin-bottom: 24px;
+    font-family: AvenirNextUltraLight;
+    color: #999999;
+}
+section.intro p {
+    font-size: 26px;
+    line-height: 38px;
+    margin-top: 48px;
+    margin-bottom: 24px;
+    font-family: AvenirNextRegular;
+    color: #999999;
+}
+section.intro .vcard {
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 24px;
+    margin-bottom: 24px;
+    font-family: AvenirNextRegular;
+    color: #999999;
+}
+section.intro .vcard div {
+    display: inline;
+}
+section.intro .vcard .org, section.intro .vcard .email, section.intro .vcard .locality, section.intro .vcard .country-name, section.intro .vcard .region {
+    display: none;
+}
+section.intro .vcard .adr {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+}
+section.intro .vcard .tel {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+p span {
+    color: #80a721;
+    font-weight: 800;
+}
+section.intro {
+    background: #333333;
+}
+section.intro h2 {
+    color: #999999;
+}
+section.intro .container {
+    margin-top: 10%;
+}
+#chevron {
+    position: relative;
+    height: 10px;
+    width: 100px;
+    margin-left: 50%;
+    left: -50px;
+    margin-top: 50%;
+}
+#chevron:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 50%;
+    background: #f18d1e;
+    -webkit-transform: skew(0deg, 40deg);
+    -moz-transform: skew(0deg, 40deg);
+    -ms-transform: skew(0deg, 40deg);
+    -o-transform: skew(0deg, 40deg);
+    transform: skew(0deg, 40deg);
+}
+#chevron:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 50%;
+    background: #f18d1e;
+    -webkit-transform: skew(0deg, -40deg);
+    -moz-transform: skew(0deg, -40deg);
+    -ms-transform: skew(0deg, -40deg);
+    -o-transform: skew(0deg, -40deg);
+    transform: skew(0deg, -40deg);
+}
+#why {
+    border-top: 8px solid #80a721;
+}
+#why p.mission {
+    font-size: 24px;
+    line-height: 38px;
+    margin-top: 48px;
+    margin-bottom: 24px;
+    font-family: AvenirNextRegular;
+    color: #999999;
+}
+#why, #what, #where, #who {
+    padding-bottom: 48px;
+}
+#where {
+    padding-bottom: 126px;
+}
+#who p:first-child {
+    margin-top: 48px;
+}
+#who h3 {
+    margin-top: 0;
+    background: #34912c;
+}
+#who ul {
+    display: none;
+}
+#what h3 {
+    margin-top: 0;
+    background: #29b5e9;
+}
+#what p.mission {
+    font-size: 24px;
+    line-height: 38px;
+    margin-top: 48px;
+    margin-bottom: 24px;
+    font-family: AvenirNextRegular;
+    color: #999999;
+}
+#what p.mission span {
+    color: #29b5e9;
+}
+#what h4 {
+    color: #29b5e9;
+}
+#where p.mission {
+    font-size: 24px;
+    line-height: 38px;
+    margin-top: 48px;
+    margin-bottom: 24px;
+    font-family: AvenirNextRegular;
+    color: #999999;
+}
+#where p.mission span {
+    color: #f18d1e;
+}
+#where h3 {
+    margin-top: 0;
+    background: #f18d1e;
+}
+#where h4 {
+    color: #f18d1e;
+    font-size: 68px;
+    line-height: 72px;
+    margin-top: 48px;
+    margin-bottom: 16px;
+}
+#where h4 span {
+    display: none;
+}
+#where h4:after {
+    content: '.';
+    margin-left: -17px;
+}
+#where .vcard span, #where .vcard div {
+    display: block;
+}
+#where .vcard .email {
+    display: none;
+}
+#where a, #where .vcard {
+    color: #f18d1e;
+    text-decoration: none;
+    font-weight: 600;
+}
+#where ul {
+    list-style-type: none;
+    margin-top: 0;
+}
+/*@media screen and (max-width: 769px) {
+    header .container {
+        width: 100vw;
+    }
+    header h1 {
+        text-align: center;
+    }
+}*/
