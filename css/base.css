@@ -97,6 +97,7 @@ nav ul li a {
 */
 }
 header {
+    z-index: 2;
     background: #4d4d4d;
     overflow: auto;
     color: white;
@@ -153,11 +154,15 @@ section.intro .vcard .adr {
     position: absolute;
     bottom: 20px;
     left: 20px;
+    color: white;
+    text-decoration: none;
 }
 section.intro .vcard .tel {
     position: absolute;
     bottom: 20px;
     right: 20px;
+    color: white;
+    text-decoration: none;
 }
 p span {
     color: #80a721;
@@ -178,7 +183,7 @@ section.intro .container {
     width: 100px;
     margin-left: 50%;
     left: -50px;
-    margin-top: 50%;
+    margin-top: 40vh;
 }
 #chevron:before {
     content: '';
@@ -209,7 +214,13 @@ section.intro .container {
     transform: skew(0deg, -40deg);
 }
 #why {
+    /*border-top: 8px solid #80a721;*/
+}
+.greenLine {
     border-top: 8px solid #80a721;
+    /*width: 100vw;*/
+    
+    z-index: 2;
 }
 #why p.mission {
     font-size: 24px;
@@ -297,11 +308,46 @@ section.intro .container {
     list-style-type: none;
     margin-top: 0;
 }
-/*@media screen and (max-width: 769px) {
-    header .container {
-        width: 100vw;
+@media screen and (max-width: 460px) {
+    section.intro h2 {
+        margin-top: 16px;
+    }
+    section.intro h1 span.hide1 {
+        display: none;
     }
     header h1 {
-        text-align: center;
+        display: none;
     }
-}*/
+    header .container {
+        width: 90%;
+    }
+    section.intro .vcard {
+    	position: absolute;
+    	bottom: 0;
+    	left: 50%;
+    	margin-left: -103px;
+    }
+    section.intro .vcard .adr,
+    section.intro .vcard .tel  {
+    	position: relative;
+    	text-align: center;
+    	display: block;
+    	left: 0;
+    	right: 0;
+    	bottom: 0;
+    	/*top: 10vh;*/
+    }
+}
+@media screen and (max-width: 360px) {
+    section.intro h1 span.hide2 {
+        display: none;
+    }
+}
+@media screen and (max-height: 700px) {
+    #chevron {
+        margin-top: 10vh;
+        height: 2px;
+        width: 50px;
+        left: -25px;
+    }
+}
