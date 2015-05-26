@@ -7,7 +7,7 @@
     src: url(../fonts/AvenirNext-Regular.woff);
 }
 body {
-    font-size: 16px;
+    font-size: 17px;
     line-height: 24px;
     /*max-width: 760px;*/
     /*margin: 0 auto;*/
@@ -40,7 +40,7 @@ h3 {
     font-weight: 400;
 }
 h4 {
-    font-size: 16px;
+    font-size: 17px;
     line-height: 24px;
     margin-top: 24px;
     margin-bottom: 24px;
@@ -50,6 +50,7 @@ p, ul, ol, pre, table, blockquote {
     margin-top: 24px;
     margin-bottom: 24px;
     color: #808080;
+    font-size: 17px;
 }
 /* Sanitation */
 
